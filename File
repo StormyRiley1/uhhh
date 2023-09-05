@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wheelstyles.css">
+  <title>Abbreviation Selector</title>
+</head>
+<body>
+  <div class="bingo-container">
+    <h1 class="title">Random Abbreviation Selector</h1>
+    <div id="result-container">
+      <p id="result">Answer</p>
+      <p id="hint"></p>
+      <div class="button-container">
+        <button id="select-button">Select a Term</button>
+        <button id="hint-button">Reveal a Hint</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="wheelscript.js"></script>
+  <script>
+    const selectButton = document.getElementById("select-button");
+    const hintButton = document.getElementById("hint-button");
+    const resultElement = document.getElementById("result");
+    const hintElement = document.getElementById("hint");
+
+    selectButton.addEventListener("click", () => {
+      // Your logic to select a random abbreviation and display it in 'resultElement' goes here
+    });
+
+    hintButton.addEventListener("click", () => {
+      // Your logic to reveal a hint and display it in 'hintElement' goes here
+    });
+  </script>
+</body>
+</html>
