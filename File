@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="wheelstyles.css">
   <title>Abbreviation Selector</title>
+  <style>
+    /* Add CSS for hiding the hint button initially */
+    #hint-button {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div class="bingo-container">
@@ -21,17 +27,11 @@
 
   <script src="wheelscript.js"></script>
   <script>
-    const selectButton = document.getElementById("select-button");
-    const hintButton = document.getElementById("hint-button");
-    const resultElement = document.getElementById("result");
-    const hintElement = document.getElementById("hint");
-
-    selectButton.addEventListener("click", () => {
-      // Your logic to select a random abbreviation and display it in 'resultElement' goes here
-    });
-
-    hintButton.addEventListener("click", () => {
-      // Your logic to reveal a hint and display it in 'hintElement' goes here
+    // JavaScript to hide the select button once it's clicked
+    const selectButton = document.getElementById('select-button');
+    selectButton.addEventListener('click', () => {
+      selectButton.style.display = 'none';
+      document.getElementById('hint-button').style.display = 'block';
     });
   </script>
 </body>
